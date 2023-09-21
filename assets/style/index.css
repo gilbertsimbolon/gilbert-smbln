@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #393131;
+}
+
+.container {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+h3 {
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.input {
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    max-height: 300px;
+    margin: 0px auto;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.round-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+    padding: 0;
+    color: #fff;
+    border: 2px solid white;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+    line-height: 50px;
+    text-align: center;
+}
+
+@keyframes animasi {
+    from {font-size: 20px;}
+    to {font-size: 40px;}
+}
+
+button:hover{
+    animation-name: animasi;
+    animation-duration: 2s;
+    transition: 0.5s;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.popup.show{
+    display: block;
+}
